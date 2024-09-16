@@ -1,0 +1,44 @@
+/* Container for the video and the overlays */
+.video-container {
+  position: relative;
+  width: 100vw; /* Full width of the viewport */
+  height: 80vh; /* Adjust the height as needed */
+  margin-top: 60px; /* Space to push the video below the navbar */
+  overflow: hidden;
+}
+
+/* Video styling to make it cover the full width and height of its container */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of container */
+  height: 100%; /* Full height of container */
+  object-fit: cover; /* Ensure it covers the container */
+  filter: blur(5px); /* Apply the blur effect */
+  z-index: 1;
+}
+
+/* The black transparent overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 2;
+}
+
+/* Text overlay that appears over the video */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Slight shadow for better visibility */
+  z-index: 3; /* Ensure the text appears above everything */
+}
