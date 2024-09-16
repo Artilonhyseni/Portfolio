@@ -1,0 +1,72 @@
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 0;
+  min-height: 100vh;
+  color: white;
+}
+
+.about-me .container {
+  max-width: 800px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.name-title {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.about-me h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-me h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.recent-work-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #6fa8ff;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  text-align: left;
+}
+
+.recent-work-btn:hover {
+  background-color: #5797ff;
+}

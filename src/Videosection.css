@@ -1,21 +1,21 @@
 /* Container for the video and the overlays */
 .video-container {
   position: relative;
-  width: 100vw; /* Full width of the viewport */
-  height: 80vh; /* Adjust the height as needed */
-  margin-top: 60px; /* Space to push the video below the navbar */
+  top: 60px; /* Adjust this if necessary to start below the navbar */
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 60px); /* Full viewport height minus navbar height */
   overflow: hidden;
+  z-index: 1; /* Ensure it's above the background */
 }
 
-/* Video styling to make it cover the full width and height of its container */
 .background-video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Full width of container */
-  height: 100%; /* Full height of container */
+  width: 100%;
+  height: 100%;
   object-fit: cover; /* Ensure it covers the container */
-  filter: blur(5px); /* Apply the blur effect */
   z-index: 1;
 }
 
