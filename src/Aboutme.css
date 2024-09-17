@@ -70,3 +70,7 @@
 .recent-work-btn:hover {
   background-color: #5797ff;
 }
+
+.recent-work-btn a {
+  text-decoration: none;
+}

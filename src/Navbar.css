@@ -1,26 +1,29 @@
 .navbar {
-  background-color: #333;
-  padding: 1rem;
+  background-color: rgba(51, 51, 51, 0.8);
+  padding: 1rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 1000;
+  backdrop-filter: blur(5px);
 }
 
 .navbar-list {
-  list-style: none !important;
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .navbar-item {
-  margin: 0 15px;
+  margin: 0;
 }
 
 .navbar-item a {
@@ -34,4 +37,7 @@
 .navbar-item a:hover {
   background-color: #555;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
 }

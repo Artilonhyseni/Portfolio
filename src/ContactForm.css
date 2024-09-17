@@ -1,15 +1,18 @@
+
+
+
 .contact-section {
-  text-align: center;
-  background-color: #fff;
-  padding: 80px 20px;
-  border-radius: 15px;
-}
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(10px); 
+  border-radius: 15px; 
 
 .contact-title {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact-content {
@@ -18,24 +21,17 @@
   align-items: center;
 }
 
-.contact-form,
-.contact-social {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 20px;
-}
-
 .contact-form {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  margin-bottom: 29px;
+  background: #fff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
 }
 
 .contact-form h3 {
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact-form input,
@@ -43,42 +39,32 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-}
-
-.contact-form textarea {
-  height: 100px;
-  resize: none;
+  box-sizing: border-box;
 }
 
 .contact-form button {
-  background-color: #00c6ff;
+  background-color: #333;
   color: #fff;
-  padding: 10px 20px;
   border: none;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #005f7f;
+  background-color: #555;
+}
+
+.contact-social {
+  text-align: center;
+  margin-top: 40px;
 }
 
 .contact-social h3 {
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.contact-social p {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .social-icons a {
@@ -87,8 +73,8 @@
 }
 
 .social-icons img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
@@ -100,4 +86,12 @@
   .contact-content {
     flex-direction: column;
   }
+}
+
+
+.success-message {
+  color: #28a745; 
+  font-size: 1rem;
+  margin-top: 15px;
+  text-align: center;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Competencies.css";
 
 const competenciesData = [
@@ -64,26 +65,34 @@ const competenciesData = [
 
 const Competencies = () => {
   return (
-    <div className="competencies-section">
-      <h2 className="competencies-title">Competencies</h2>
-      <p className="competencies-intro">
-        I'm a team player who thrives under any circumstances and delivers
-        high-quality work on time. My goal is to create the best solutions for
-        clients while balancing clean design with user-friendly experiences.
-      </p>
-      <div className="competencies-grid">
-        {competenciesData.map((competency) => (
-          <div className="competency-item" key={competency.id}>
-            <img
-              src={`/icons/${competency.icon}`}
-              alt={competency.description}
-              className="competency-icon"
-            />
-            <p className="competency-description">{competency.description}</p>
-          </div>
-        ))}
+    <section id="competencies">
+      <div className="competencies-section">
+        <h2 className="competencies-title">Competencies</h2>
+        <p className="competencies-intro">
+          I'm a team player who thrives under any circumstances and delivers
+          high-quality work on time. My goal is to create the best solutions for
+          clients while balancing clean design with user-friendly experiences.
+        </p>
+        <div className="competencies-grid">
+          {competenciesData.map((competency) => (
+            <motion.div
+              className="competency-item"
+              key={competency.id}
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: competency.id * 0.1 }}
+            >
+              <img
+                src={`/icons/${competency.icon}`}
+                alt={competency.description}
+                className="competency-icon"
+              />
+              <p className="competency-description">{competency.description}</p>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

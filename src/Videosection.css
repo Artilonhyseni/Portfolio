@@ -1,5 +1,4 @@
-/* Container for the video and the overlays */
-.video-container {
+/ .video-container {
   position: relative;
   top: 60px; /* Adjust this if necessary to start below the navbar */
   left: 0;
@@ -30,9 +29,9 @@
   z-index: 2;
 }
 
-/* Text overlay that appears over the video */
 .overlay-text {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -41,4 +40,10 @@
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Slight shadow for better visibility */
   z-index: 3; /* Ensure the text appears above everything */
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 2rem;
+  }
 }
