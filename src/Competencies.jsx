@@ -4,41 +4,41 @@ import "./Competencies.css";
 const competenciesData = [
   {
     id: 1,
-    icon: "Visual studios.png",
+    icon: "visual-studio.png",
     description:
-      "My main software for coding is Visual Studio, and i am very skilled in the software.",
+      "My main software for coding is Visual Studio, and I am very skilled in the software.",
   },
   {
     id: 2,
-    icon: "After Effects.png",
+    icon: "after-effects.png",
     description: "I am very skilled in Motion Graphics, and Video Editing.",
   },
   {
     id: 3,
-    icon: "React.png",
+    icon: "react.png",
     description:
       "I just learned React.js and have an understanding of how to use it.",
   },
   {
     id: 4,
     icon: "javascript.png",
-    description: "I have an understanding of how to use JS in my projects",
+    description: "I have an understanding of how to use JS in my projects.",
   },
   {
     id: 5,
-    icon: "Figma.png",
+    icon: "figma.png",
     description:
-      "I am very skilled in Figma and have a wide understanding of the features",
+      "I am very skilled in Figma and have a wide understanding of the features.",
   },
   {
     id: 6,
-    icon: "Lightroom.png",
+    icon: "lightroom.png",
     description:
       "I am very skilled in photo editing and know how to work with color correction and contrast.",
   },
   {
     id: 7,
-    icon: "Html.png",
+    icon: "html.png",
     description:
       "I am very skilled in HTML and know how to build a website with the language.",
   },
@@ -46,19 +46,19 @@ const competenciesData = [
     id: 8,
     icon: "css.png",
     description:
-      "I am very skilled in CSS and know how to use it to style a website",
+      "I am very skilled in CSS and know how to use it to style a website.",
   },
   {
     id: 9,
-    icon: "Illustrator.png",
+    icon: "illustrator.png",
     description:
       "I am skilled in Illustrator and have a wide understanding of icons and logo design.",
   },
   {
     id: 10,
-    icon: "Indesign.png",
+    icon: "indesign.png",
     description:
-      "I am skilled in InDesign and have a wide understanding of its features",
+      "I am skilled in InDesign and have a wide understanding of its features.",
   },
 ];
 
@@ -75,7 +75,7 @@ const Competencies = () => {
         {competenciesData.map((competency) => (
           <div className="competency-item" key={competency.id}>
             <img
-              src={`/icons/$}{competency.icon}`}
+              src={`/icons/${competency.icon}`}
               alt={competency.description}
               className="competency-icon"
             />
