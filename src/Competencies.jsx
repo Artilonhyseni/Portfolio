@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import "./Competencies.css";
 
 const competenciesData = [
@@ -75,20 +75,14 @@ const Competencies = () => {
         </p>
         <div className="competencies-grid">
           {competenciesData.map((competency) => (
-            <motion.div
-              className="competency-item"
-              key={competency.id}
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: competency.id * 0.1 }}
-            >
+            <div className="competency-item" key={competency.id}>
               <img
                 src={`/icons/${competency.icon}`}
                 alt={competency.description}
                 className="competency-icon"
               />
               <p className="competency-description">{competency.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
