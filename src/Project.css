@@ -1,85 +1,98 @@
-/* General Styles for Navbar */
-.navbar {
-  background-color: #333;
-  padding: 10px;
-  display: flex;
-  justify-content: center; /* Center the items horizontally */
+.project-section {
+  padding: 60px 20px;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.projects-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.navbar-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.navbar-item {
-  margin: 0 15px;
-}
-
-.navbar-item a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-}
-
-.navbar-item a:hover {
-  background-color: #555;
-}
-
-/* Hide the hamburger button on larger screens */
-.navbar-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
+.project-item {
+  background-color: #444;
+  color: #f0f0f0;
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
   cursor: pointer;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .navbar-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    text-align: center;
-  }
-
-  .navbar-list.open {
-    display: flex;
-  }
-
-  .navbar-toggle {
-    display: block;
-    margin-left: auto;
-  }
-
-  .navbar-item {
-    padding: 10px;
-    width: 100%;
-  }
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Desktop Styles - Show menu in a row and hide toggle */
-@media (min-width: 769px) {
-  .navbar-list {
-    display: flex !important; /* Ensure it displays flex on desktop */
-  }
+.project-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+}
 
-  .navbar-toggle {
-    display: none; /* Hide toggle button on desktop */
-  }
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.projects-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.projects-description strong {
+  color: black;
+  font-weight: bold;
 }

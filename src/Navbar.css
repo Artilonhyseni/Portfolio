@@ -1,26 +1,24 @@
-/* Navbar.css */
-
+/* General Styles for Navbar */
 .navbar {
   background-color: #333;
   padding: 10px;
-  color: white;
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  position: relative; /* Ensure proper positioning of the toggle button */
+  justify-content: center; /* Center the items horizontally */
 }
 
 .navbar-container {
   display: flex;
   justify-content: center;
   width: 100%;
-  position: relative; /* Ensure proper positioning of the navbar-list */
 }
 
 .navbar-list {
-  display: flex;
   list-style: none;
-  margin: 0;
+  display: flex;
+  justify-content: center;
   padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-item {
@@ -30,7 +28,7 @@
 .navbar-item a {
   color: white;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
   display: block;
 }
 
@@ -38,40 +36,51 @@
   background-color: #555;
 }
 
-/* Toggle button styles */
+/* Hide the hamburger button on larger screens */
 .navbar-toggle {
-  display: none; /* Hidden by default */
+  display: none;
   background: none;
   border: none;
   color: white;
   font-size: 24px;
   cursor: pointer;
-  margin-left: auto;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   .navbar-list {
-    display: none; /* Hide menu by default */
+    display: none;
     flex-direction: column;
-    width: 100%;
     position: absolute;
-    top: 50px; /* Adjust based on your navbar height */
+    top: 50px;
     left: 0;
+    width: 100%;
     background-color: #333;
     text-align: center;
   }
 
   .navbar-list.open {
-    display: flex; /* Show menu when open */
-  }
-
-  .navbar-item {
-    margin: 0;
-    padding: 10px;
+    display: flex;
   }
 
   .navbar-toggle {
-    display: block; /* Show toggle button on mobile */
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-item {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+/* Desktop Styles - Show menu in a row and hide toggle */
+@media (min-width: 769px) {
+  .navbar-list {
+    display: flex !important; /* Ensure it displays flex on desktop */
+  }
+
+  .navbar-toggle {
+    display: none; /* Hide toggle button on desktop */
   }
 }
