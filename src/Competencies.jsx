@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./Competencies.css";
 
 const competenciesData = [
@@ -69,7 +67,7 @@ const Competencies = () => {
       <div className="competencies-section">
         <h2 className="competencies-title">Competencies</h2>
         <p className="competencies-intro">
-          I'm a team player who thrives under any circumstances and delivers
+          Im a team player who thrives under any circumstances and delivers
           high-quality work on time. My goal is to create the best solutions for
           clients while balancing clean design with user-friendly experiences.
         </p>

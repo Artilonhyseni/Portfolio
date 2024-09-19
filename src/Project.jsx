@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Project.css";
 
 const ProjectSection = () => {
@@ -29,7 +29,7 @@ const ProjectSection = () => {
           <br />
           <br />
           One of my featured ongoing projects is <strong>Artismedia</strong>, my
-          personal brand where I design for artists. It's an evolving project
+          personal brand where I design for artists. Its an evolving project
           where I explore creative designs for artists in need of branding,
           media, and digital designs. Check it out!
         </p>

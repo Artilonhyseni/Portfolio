@@ -1,6 +1,4 @@
-import React from "react";
 import "./Videosection.css";
-import { motion } from "framer-motion";
 
 const VideoSection = () => {
   return (

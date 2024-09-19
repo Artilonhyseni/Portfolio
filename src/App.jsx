@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+
 import Navbar from "./Navbar";
 import "./NavBar.css";
 import VideoSection from "./Videosection";
