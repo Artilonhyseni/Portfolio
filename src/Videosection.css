@@ -47,27 +47,27 @@
 
 .cta-button {
   display: inline-block;
-  margin-top: 20px; /* Space between text and button */
-  padding: 10px 20px; /* Button padding */
-  background-color: #6fa8ff; /* Button background color */
-  color: white; /* Text color */
-  font-size: 18px; /* Font size */
-  font-weight: bold; /* Font weight */
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
-  transition: transform (0, 3s); /* Smooth transition */
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6fa8ff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform (0, 3s);
 }
 
 .cta-button:hover {
-  transform: scale(1.05); /* Darker color on hover */
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
   .overlay-text {
-    font-size: 2rem; /* Responsive font size for mobile */
+    font-size: 2rem;
   }
 
   .background-video {
-    filter: blur(3px); /* Adjust blur for smaller screens */
+    filter: blur(3px);
   }
 }

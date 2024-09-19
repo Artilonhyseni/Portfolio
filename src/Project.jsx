@@ -7,18 +7,16 @@ const ProjectSection = () => {
 
   const handleProjectClick = (project) => {
     if (project === "artismedia") {
-      // Redirect to Instagram profile
-      window.location.href = "https://www.instagram.com/artismediia/"; // Replace with your actual Instagram profile URL
+      window.location.href = "https://www.instagram.com/artismediia/";
     } else {
-      // Toggle expansion for other projects
       setExpandedProject(expandedProject === project ? null : project);
-      setShowModal(!showModal); // Toggle modal visibility
+      setShowModal(!showModal);
     }
   };
 
   const closeModal = () => {
     setShowModal(false);
-    setExpandedProject(null); // Reset the expanded project state when closing modal
+    setExpandedProject(null);
   };
 
   return (
@@ -37,7 +35,7 @@ const ProjectSection = () => {
         </p>
 
         <div className="projects-grid">
-          {/* Webdesign Project */}
+          {}
           <div
             className={`projects-item ${
               expandedProject === "webdesign" ? "expanded" : ""
@@ -52,7 +50,7 @@ const ProjectSection = () => {
             </div>
           </div>
 
-          {/* Artismedia Project */}
+          {}
           <div
             className="projects-item"
             onClick={() => handleProjectClick("artismedia")}
@@ -65,7 +63,7 @@ const ProjectSection = () => {
           </div>
         </div>
 
-        {/* Modal for Webdesign Project */}
+        {}
         {showModal && expandedProject === "webdesign" && (
           <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content">

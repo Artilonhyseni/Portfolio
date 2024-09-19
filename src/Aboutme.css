@@ -1,63 +1,58 @@
-/* About Me section styling */
 .about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px; /* Standard font size for better readability */
+  font-size: 20px;
   padding: 80px 20px;
-  color: #ffffff; /* Ensure text color is readable */
-  background-size: cover; /* Cover the section */
-  text-align: center; /* Center text and inline elements */
+  color: #ffffff;
+  background-size: cover;
+  text-align: center;
 }
 
-/* Container to center content */
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto; /* Center container horizontally */
+  margin: 0 auto;
 }
 
 .section-title {
-  font-family: poppins, sans-serif; /* Font family for the title */
+  font-family: poppins, sans-serif;
   font-size: 5rem;
-  margin-bottom: 25px; /* Space below the title */
+  margin-bottom: 25px;
   color: #fff;
 }
 
-/* Styling for the name title */
 .name-title {
   font-family: "Poppins", sans-serif;
-  font-size: 5rem; /* Large font size */
-  font-weight: bold; /* Bold text */
-  margin-bottom: 10px; /* Space below the name */
-  color: #fff; /* White text color */
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
-/* Styling for the description */
 .description {
-  max-width: 800px; /* Maximum width */
-  font-family: roboto, sans-serif; /* Font family for description */
-  font-size: 1.2rem; /* Font size for better readability */
-  line-height: 1.8; /* Line height for readability */
-  margin: 0 auto; /* Center the text block */
-  margin-bottom: 15px; /* Space below each paragraph */
+  max-width: 800px;
+  font-family: roboto, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
-/* Basic styling for the button */
 .recent-work-btn {
-  font-size: 16px; /* Standard font size */
-  padding: 10px 20px; /* Standard padding */
-  border: 1px solid #6fa8ff; /* Border color */
-  border-radius: 20px; /* Rounded corners */
-  background-color: #6fa8ff; /* Button background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Pointer cursor on hover */
-  text-align: center; /* Center text inside button */
-  text-decoration: none; /* Remove underline from links */
-  display: inline-block; /* Align with text if needed */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for scale and background color */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #6fa8ff;
+  border-radius: 20px;
+  background-color: #6fa8ff;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .recent-work-btn:hover {
-  transform: scale(1.1); /* Scale up the button on hover */
+  transform: scale(1.1);
 }

@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
-import "./Navbar.css"; // Assuming you'll have CSS to handle the layout
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // This will check if the screen size is small enough for mobile
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the value (768px) based on your mobile breakpoint
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    // Run on initial load
     handleResize();
 
-    // Add event listener to handle screen resize
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };

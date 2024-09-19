@@ -1,9 +1,8 @@
-/* General Styles for Navbar */
 .navbar {
   background-color: #333;
   padding: 10px;
   display: flex;
-  justify-content: center; /* Center the items horizontally */
+  justify-content: center;
 }
 
 .navbar-container {
@@ -36,7 +35,6 @@
   background-color: #555;
 }
 
-/* Hide the hamburger button on larger screens */
 .navbar-toggle {
   display: none;
   background: none;
@@ -46,7 +44,6 @@
   cursor: pointer;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar-list {
     display: none;
@@ -74,13 +71,12 @@
   }
 }
 
-/* Desktop Styles - Show menu in a row and hide toggle */
 @media (min-width: 769px) {
   .navbar-list {
-    display: flex !important; /* Ensure it displays flex on desktop */
+    display: flex !important;
   }
 
   .navbar-toggle {
-    display: none; /* Hide toggle button on desktop */
+    display: none;
   }
 }
