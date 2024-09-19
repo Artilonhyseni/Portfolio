@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Navbar from "./Navbar";
-import "./NavBar.css";
+import "./Navbar.css";
 import VideoSection from "./Videosection";
 import Aboutme from "./Aboutme";
 import Competencies from "./Competencies";
