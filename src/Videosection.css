@@ -1,11 +1,13 @@
-/ .video-container {
+/* Video Section */
+.video-container {
   position: relative;
-  top: 60px; /* Adjust this if necessary to start below the navbar */
-  left: 0;
   width: 100vw;
-  height: calc(100vh - 60px); /* Full viewport height minus navbar height */
+  height: calc(
+    100vh - 60px
+  ); /* Ensure it does not overlap with other sections */
   overflow: hidden;
-  z-index: 1; /* Ensure it's above the background */
+  z-index: 1;
+  margin-bottom: 0; /* Ensure it does not push other sections away */
 }
 
 .background-video {
@@ -14,18 +16,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure it covers the container */
+  object-fit: cover;
   z-index: 1;
 }
 
-/* The black transparent overlay */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
@@ -38,8 +39,8 @@
   color: white;
   font-size: 48px;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Slight shadow for better visibility */
-  z-index: 3; /* Ensure the text appears above everything */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 3;
 }
 
 @media (max-width: 768px) {

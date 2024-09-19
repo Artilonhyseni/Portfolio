@@ -1,76 +1,63 @@
+/* About Me section styling */
 .about-me {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 100px 0;
-  min-height: 100vh;
-  color: white;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px; /* Standard font size for better readability */
+  padding: 80px 20px;
+  color: #ffffff; /* Ensure text color is readable */
+  background-size: cover; /* Cover the section */
+  text-align: center; /* Center text and inline elements */
 }
 
-.about-me .container {
+/* Container to center content */
+.container {
   max-width: 800px;
-  margin-left: 20px;
   width: 100%;
+  margin: 0 auto; /* Center container horizontally */
 }
 
 .section-title {
-  font-size: 35px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: left;
-}
-
-.name-title {
+  font-family: poppins, sans-serif; /* Font family for the title */
   font-size: 5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-align: left;
+  margin-bottom: 25px; /* Space below the title */
+  color: #fff;
 }
 
+/* Styling for the name title */
+.name-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem; /* Large font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 10px; /* Space below the name */
+  color: #fff; /* White text color */
+}
+
+/* Styling for the description */
 .description {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  text-align: left;
+  max-width: 800px; /* Maximum width */
+  font-family: roboto, sans-serif; /* Font family for description */
+  font-size: 1.2rem; /* Font size for better readability */
+  line-height: 1.8; /* Line height for readability */
+  margin: 0 auto; /* Center the text block */
+  margin-bottom: 15px; /* Space below each paragraph */
 }
 
-.about-me h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.about-me h3 {
-  font-size: 24px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.about-me p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
+/* Basic styling for the button */
 .recent-work-btn {
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  background-color: #6fa8ff;
-  color: white;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s;
-  text-align: left;
+  font-size: 16px; /* Standard font size */
+  padding: 10px 20px; /* Standard padding */
+  border: 1px solid #6fa8ff; /* Border color */
+  border-radius: 20px; /* Rounded corners */
+  background-color: #6fa8ff; /* Button background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center text inside button */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Align with text if needed */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for scale and background color */
 }
 
 .recent-work-btn:hover {
-  background-color: #5797ff;
-}
-
-.recent-work-btn a {
-  text-decoration: none;
+  transform: scale(1.1); /* Scale up the button on hover */
 }

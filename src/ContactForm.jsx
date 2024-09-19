@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
-  // State to handle form submission status
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add form validation and submission logic here
 
-    // Show success message
     setSubmitted(true);
 
-    // Optionally, reset the form after submission
     e.target.reset();
   };
 
